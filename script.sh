@@ -134,6 +134,20 @@ sudo ln -sf /opt/popcorntime/Popcorn-Time /usr/bin/Popcorn-Time
 echo -e '[Desktop Entry]\n Version=1.0\n Name=popcorntime\n Exec=/opt/popcorntime/Popcorn-Time\n Icon=/opt/popcorntime/src/app/images/icon.png\n Type=Application\n Categories=Application' | sudo tee /usr/share/applications/popcorntime.desktop
 sudo chmod +x /usr/share/applications/popcorntime.desktop
 
+echo 'Instalando wine...';
+sudo dpkg --add-architecture i386
+wget -nc https://dl.winehq.org/wine-builds/winehq.key
+sudo apt-key add winehq.key
+sudo apt-add-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ bionic main'
+sudo apt install --install-recommends winehq-stable
+
+echo 'Instalando playonlinux...';
+sudo apt install playonlinux
+
+echo 'Instalando qBittorrent...';
+sudo add-apt-repository ppa:qbittorrent-team/qbittorrent-stable
+sudo apt install qbittorrent
+
 echo 'Atualizando...';
 sudo apt-get autoremove;
 sudo apt-get update;
