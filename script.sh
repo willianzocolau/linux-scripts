@@ -155,6 +155,12 @@ google-drive-ocamlfuse
 mkdir ~/drive
 google-drive-ocamlfuse ~/drive
 
+echo 'Instalando Pomodoro';
+sudo apt-get install gnome-shell-pomodoro
+
+echo 'Instalando Steam';
+sudo apt install steam-installer
+
 echo 'Atualizando...';
 sudo apt-get autoremove;
 sudo apt-get update;
