@@ -134,6 +134,7 @@ sudo ln -sf /opt/popcorntime/Popcorn-Time /usr/bin/Popcorn-Time
 echo -e '[Desktop Entry]\n Version=1.0\n Name=popcorntime\n Exec=/opt/popcorntime/Popcorn-Time\n Icon=/opt/popcorntime/src/app/images/icon.png\n Type=Application\n Categories=Application' | sudo tee /usr/share/applications/popcorntime.desktop
 sudo chmod +x /usr/share/applications/popcorntime.desktop
 
+<<<<<<< HEAD
 echo 'Instalando wine...';
 sudo dpkg --add-architecture i386
 wget -nc https://dl.winehq.org/wine-builds/winehq.key
@@ -155,6 +156,8 @@ google-drive-ocamlfuse
 mkdir ~/drive
 google-drive-ocamlfuse ~/drive
 
+=======
+>>>>>>> master
 echo 'Atualizando...';
 sudo apt-get autoremove;
 sudo apt-get update;
