@@ -148,6 +148,13 @@ echo 'Instalando qBittorrent...';
 sudo add-apt-repository ppa:qbittorrent-team/qbittorrent-stable
 sudo apt install qbittorrent
 
+echo 'Instalando Google Drive';
+sudo add-apt-repository ppa:alessandro-strada/ppa
+sudo apt-get install google-drive-ocamlfuse
+google-drive-ocamlfuse
+mkdir ~/drive
+google-drive-ocamlfuse ~/drive
+
 echo 'Atualizando...';
 sudo apt-get autoremove;
 sudo apt-get update;
