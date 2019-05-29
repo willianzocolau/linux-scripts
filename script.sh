@@ -161,6 +161,9 @@ sudo apt-get install gnome-shell-pomodoro
 echo 'Instalando Steam';
 sudo apt install steam-installer
 
+echo 'Instalando Bluetooth';
+sudo apt-get install blueman
+
 echo 'Atualizando...';
 sudo apt-get autoremove;
 sudo apt-get update;
