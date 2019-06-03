@@ -164,6 +164,13 @@ sudo apt install steam-installer
 echo 'Instalando Bluetooth';
 sudo apt-get install blueman
 
+echo 'Instalando HyperJS';
+xdg-open https://releases.hyper.is/download/deb
+sudo update-alternatives --install /usr/bin/x-terminal-emulator x-terminal-emulator /opt/Hyper/hyper 50
+
+echo 'Instalando TodoIst';
+xdg-open https://github.com/KryDos/todoist-linux/releases/download/1.17/Todoist_1.17.0_amd64.deb
+
 echo 'Atualizando...';
 sudo apt-get autoremove;
 sudo apt-get update;
