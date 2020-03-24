@@ -1,22 +1,8 @@
-echo 'Atualizando...';
-sudo apt-get update;
-sudo apt-get upgrade;
-clear;
-
-echo 'Instalando curl...';
-sudo apt install -y curl wget
-clear;
-
-echo 'Instalando snap...';
-sudo apt install snapd
-clear;
-
 echo 'Instalando sublime-text...';
 sudo snap install sublime-text --classic
 clear;
 
 echo 'Instalando chrome...';
-sudo apt-get install -y libxss1 libappindicator1 libindicator7;
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb;
 sudo dpkg -i google-chrome*.deb;
 rm google-chrome*.deb;
