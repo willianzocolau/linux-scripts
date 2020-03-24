@@ -35,10 +35,6 @@ echo 'Instalando postman...';
 sudo snap install postman;
 clear;
 
-echo 'Instalando postgresql...';
-sudo snap install postgresql
-clear;
-
 echo 'Instalando Steam';
 sudo apt install steam-installer
 
