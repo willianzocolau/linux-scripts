@@ -35,9 +35,6 @@ echo 'Instalando postman...';
 sudo snap install postman;
 clear;
 
-echo 'Instalando Steam';
-sudo apt install steam-installer
-
 echo 'Instalando HyperJS';
 wget https://releases.hyper.is/download/deb
 sudo update-alternatives --install /usr/bin/x-terminal-emulator x-terminal-emulator /opt/Hyper/hyper 50
@@ -71,39 +68,8 @@ echo 'Instalando postman...';
 sudo snap install postman;
 clear;
 
-echo 'Instalando postgresql...';
-sudo snap install postgresql
-clear;
-
-echo 'Instalando netbeans...';
-sudo snap install netbeans --classic
-clear;
-
-echo 'Instalando popcorntime...';
-sudo rm -Rf /opt/popcorntime
-sudo rm -Rf /usr/bin/Popcorn-Time
-sudo rm -Rf /usr/share/applications/popcorntime.desktop
-wget https://get.popcorntime.sh/build/Popcorn-Time-0.3.10-Linux-64.tar.xz -O popcorntime.tar.xz
-sudo mkdir /opt/popcorntime
-sudo tar Jxf popcorntime.tar.xz -C /opt/popcorntime/
-sudo ln -sf /opt/popcorntime/Popcorn-Time /usr/bin/Popcorn-Time
-echo -e '[Desktop Entry]\n Version=1.0\n Name=popcorntime\n Exec=/opt/popcorntime/Popcorn-Time\n Icon=/opt/popcorntime/src/app/images/icon.png\n Type=Application\n Categories=Application' | sudo tee /usr/share/applications/popcorntime.desktop
-sudo chmod +x /usr/share/applications/popcorntime.desktop
-
-echo 'Instalando qBittorrent...';
-sudo add-apt-repository ppa:qbittorrent-team/qbittorrent-stable
-sudo apt install qbittorrent
-
 echo 'Atualizando...';
 sudo apt-get autoremove;
 sudo apt-get update;
 sudo apt-get upgrade;
-clear;
-
-echo 'Instalando rubymine...';
-sudo snap install rubymine --classic
-clear;
-
-echo 'Instalando clion...';
-sudo snap install clion --classic
 clear;
